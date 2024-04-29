@@ -28,12 +28,12 @@ Pod::Spec.new do |spec|
   
   # Hyphenate
   spec.dependency "Agora_Chat_iOS", "1.0.6"
-  spec.dependency "SDWebImage", "<=5.12.0"
+  spec.dependency "SDWebImage", "<=5.19.1"
 
   spec.pod_target_xcconfig  = { "EXCLUDED_ARCHS[sdk=iphonesimulator*]" => "arm64", "DEFINES_MODULE" => "YES" }
   spec.user_target_xcconfig = { "EXCLUDED_ARCHS[sdk=iphonesimulator*]" => "arm64", "DEFINES_MODULE" => "YES" }
-  spec.pod_target_xcconfig  = { "VALID_ARCHS" => "arm64 armv7 x86_64" }
-  spec.user_target_xcconfig = { "VALID_ARCHS" => "arm64 armv7 x86_64" } 
+  # spec.pod_target_xcconfig  = { "VALID_ARCHS" => "arm64 armv7 x86_64" }
+  # spec.user_target_xcconfig = { "VALID_ARCHS" => "arm64 armv7 x86_64" } 
   spec.xcconfig             = { "BUILD_LIBRARY_FOR_DISTRIBUTION" => "YES" }
   
   spec.subspec "Resources" do |ss|
